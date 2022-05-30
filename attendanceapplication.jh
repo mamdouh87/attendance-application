@@ -1,0 +1,40 @@
+entity Employee{
+	nameEn String,
+    nameAr String,
+    email String,
+    employeeCode String,
+    mobileNo String ,
+    address String ,
+    nationalId String,
+    title String
+}
+entity Department{
+	code String ,
+	nameEn String,
+    nameAr String
+}
+
+entity Attendance{
+	 logDate LocalDate,
+     logTimeFrom Instant,
+     logTimeTo Instant,
+     permissionHours Integer,
+     details String
+}
+
+entity AttendanceType{
+	code String ,
+    descEn String ,
+    descAr String
+}
+
+relationship OneToOne {
+	Employee{user} to User
+}
+
+
+paginate * with pagination
+
+service all with serviceClass
+
+dto all with mapstruct
