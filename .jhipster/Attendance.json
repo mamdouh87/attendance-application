@@ -1,0 +1,36 @@
+{
+  "applications": "*",
+  "changelogDate": "20220530163232",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "attendance",
+  "fields": [
+    {
+      "fieldName": "logDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "logTimeFrom",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "logTimeTo",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "permissionHours",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "details",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Attendance",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [],
+  "service": "serviceClass"
+}
